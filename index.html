@@ -4,9 +4,8 @@
 <title>Page Title</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  
 <style>
- * {
+* {
   box-sizing: border-box;
 }
 
@@ -18,15 +17,18 @@ body {
 
 /* Header/logo Title */
 .header {
-padding:0px;
-text-align: center;
-  background:	#000080;
+  padding: 0px;
+  text-align: center;
+  
+      background: lightblue;
+      
   color: white;
 }
-  .header h1 {
+
+/* Increase the font size of the heading */
+.header h1 {
   font-size: 40px;
 }
-
 
 /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
 .navbar {
@@ -42,7 +44,7 @@ text-align: center;
   float: left;
   display: block;
   color: white;
-   text-align: center;
+  text-align: center;
   padding: 14px 20px;
   text-decoration: none;
 }
@@ -64,28 +66,6 @@ text-align: center;
   background-color: #666;
   color: white;
 }
-  .button {
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-}
-
-.button:hover {background-color: #3e8e41}
-
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
 
 /* Column container */
 .row {  
@@ -100,7 +80,7 @@ text-align: center;
 .side {
   -ms-flex: 30%; /* IE10 */
   flex: 30%;
-  background-color: #778899;
+  background-color: #f1f1f1;
   padding: 20px;
 }
 
@@ -109,7 +89,7 @@ text-align: center;
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
   background-color: white;
-  padding: 0px;
+  padding: 20px;
 }
 
 /* Fake image, just for this example */
@@ -125,8 +105,13 @@ text-align: center;
   text-align: center;
   background: #ddd;
 }
- 
 
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
@@ -135,15 +120,14 @@ text-align: center;
     width: 100%;
   }
 }
-
 </style>
 </head>
 <body>
-  
+
 <div class="header">
-<h1>ॐ अखिल भारतीय सुथार समाज</h1>
-  
-       
+ 
+       <img src="\sutharsamajmgst/mg.jpg"
+            style="height:1000px;">
   
 </div>
 
@@ -164,10 +148,8 @@ text-align: center;
     <h5>Website devloper:</h5>
     
       <img src="\sutharsamajmgst/madan.jpg"
-           style="height:350px;">
+           style="height:200px;">
     <p>MADANGOPAL SUTHAR</p>
-    
-  <a href="https://www.facebook.com/madangopal.suthar.3"><button class="button">Facebook</button></a>
     <p>Mobile no:8290146764<p>
     <p>Email:madangopalsuthar2010@gmail.com</p>
     <p><b>Currently work at software devloper</b></p>
