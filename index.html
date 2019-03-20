@@ -4,7 +4,7 @@
 <title>Page Title</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
- 
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {
@@ -83,20 +83,14 @@ body {
   text-align: center;
   background: #ddd;
 }
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media (max-width: 700px) {
-  .row, .navbar {   
-    flex-direction: column;
-  }
-}
-  .fa {
+ 
+.fa {
   padding: 20px;
   font-size: 30px;
   width: 30px;
   text-align: center;
   text-decoration: none;
-  margin: 15px 8px;
+  margin: 5px 8px;
   border-radius: 50%;
 }
 
@@ -130,6 +124,21 @@ body {
   color: white;
 }
 
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+ 
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
 </style>
 </head>
 <body>
