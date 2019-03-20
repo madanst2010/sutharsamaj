@@ -121,6 +121,16 @@ body {
   background: #125688;
   color: white;
 }
+  .blinking{
+    animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
     
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
@@ -365,9 +375,9 @@ He is mentioned as the son of Kāśyapa and Aditi and is said to have made the t
 </div>
 <div class="footer">
   <p><marquee><b><h8>This site is only for learning purpose.</h8></b></marquee></p>
-    
- <p>My website, my email magazine, my blog, my books, my corporate seminars, and my public seminars all create the ability for social media to work and all build reputation and ranking.</p>
-
+    <span class="blinking">My website, my email magazine, my blog, my books, my corporate seminars, and my public seminars all create the ability for social media to work and all build reputation and ranking.</p>
+</span>
+ 
  <p>  
  
 <a href="https://www.facebook.com/madangopal.suthar.3" class="fa fa-facebook"></a>
