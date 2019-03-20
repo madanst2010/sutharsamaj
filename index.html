@@ -4,6 +4,12 @@
 <title>Page Title</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  
+  
+  
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {
@@ -25,6 +31,13 @@ body {
   color: white;
 }
 
+  
+  .mySlides {display:none;}
+  
+  
+  
+  
+  
 /* Style the top navigation bar */
 .navbar {
   display: flex;
@@ -133,12 +146,28 @@ body {
   
 <div class="header">
 <h1>ॐ भारतीय सुथार समाज</h1>
-  
-       
-  
 </div>
   
- <img src="\sutharsamajmgst/e.png" alt="Nature" class="responsive" width="1550" height="10"><br>
+  
+  
+  
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="e.png" style="width:100%">
+  <img class="mySlides" src="img_lights.jpg" style="width:100%">
+  <img class="mySlides" src="img_mountains.jpg" style="width:100%">
+  <img class="mySlides" src="img_forest.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+  
+  
+  
+  
+  
+  
+  
+
 <div class="navbar">
   <a href="#" class="active">Home</a>
   <a href="about us.html">ABOUT US</a>
@@ -224,5 +253,40 @@ He is mentioned as the son of Kāśyapa and Aditi and is said to have made the t
 <a href="https://www.linkedin.com/in/madangopal-suthar-97a6a7145/" class="fa fa-linkedin"></a>
 <a href="https://www.instagram.com/madan_st_2010/" class="fa fa-instagram"></a></p>
    </div>
+  
+  
+  
+  
+  
+  
+  
+  <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+  
+  
+  
+  
+  
+  
+  
+  
 </body>
   </html>
