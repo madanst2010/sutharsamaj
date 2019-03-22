@@ -8,11 +8,16 @@
   font-family: Arial;
   margin: 0;
 }
+      #grad1 {
+  height: auto;
+  background-color: blue; /* For browsers that do not support gradients */
+  background-image: linear-gradient(90deg, rgb(174, 0, 255), rgb(0, 162, 255)); /* Standard syntax (must be last) */
+}
+   
 
     .header {
-  padding: 50px;
+  padding: 20px;
   text-align: center;
-  background:grey;
   color: white;
 }.header2 {
   padding: 10px;
@@ -23,8 +28,7 @@
 .header1 {
   padding: 10px;
   text-align: left;
-  background:grey;
-  color: black;
+  color: white;
 }
 .header1 h1 {
   font-size: 30px;
@@ -76,6 +80,7 @@
 </style>
 </head>
 <body>
+    <div id="grad1">
         <div class="header">
 <h1><i>Ram suthar</h1>
 <p>Ram Vanji Sutar has designed the Statue of Unity.</p>
@@ -93,14 +98,16 @@
     
 </div>
 
-    <div class="header1">
+    <div class="header">
             <h1><b>Other famous person:</b></h1>
-
-                   <p> 1:Narsiram suthar<br>
-                    2:Radhakishan suthar<br>
-                    3:Babu lal suthar<br>
+            </div>
+             <div class="header1">
+                 <p>1:Narsiram suthar</p>
+                    <p>2:Radhakishan suthar</p>
+           <p>3:Babulal suthar</p>
                     </p>
                     <p>These persons are well known interior desginer.Currently works at <b>Mumbai</b>.</p>
+        </div>
         </div>
 
        
